@@ -11,9 +11,9 @@
     crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <style>
-  /* #section1{
-    height: 500px;
-  } */
+  div#section1.section {
+    min-height:700px;
+  }
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
     width: 100%;
@@ -59,8 +59,8 @@
     .text {
     /* background-color: #4CAF50; */
     color: white;
-    font-size: 30px;
-    padding: 16px 32px;
+    font-size:18px;
+    /* padding: 16px 32px; */
     font-weight: bolder;
     }
     a:hover{
@@ -68,9 +68,7 @@
         color:white;
 
     }
-   div #section .section{
-     height:500px;
-   }
+
     </style>
 </head>
 <body>
@@ -104,7 +102,7 @@
                 </div>
               </nav>
     
-    <div id="section1" class="section" style="min-height: 600px;">
+    <div id="section1" class="section" >
         <!-- <div class="text-wr"> -->
           <div class="container2">
             <br>
@@ -121,7 +119,7 @@
               <div class="carousel-inner" role="listbox">
           
                 <div class="item active">
-                  <img src="https://ied.eu/wp-content/uploads/2018/09/innovation.png" alt="Chania" style="height:600px">
+                  <img src="https://ied.eu/wp-content/uploads/2018/09/innovation.png" alt="Chania" style="height:700px">
                   <div class="carousel-caption">
                     <h3>Chania</h3>
                     <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -129,7 +127,7 @@
                 </div>
           
                 <div class="item">
-                  <img src="https://cdn.lynda.com/static/landing/images/hero/Fostering_innovation_1420x630-1503425970077.jpg" alt="Chania" style="height:600px">
+                  <img src="https://cdn.lynda.com/static/landing/images/hero/Fostering_innovation_1420x630-1503425970077.jpg" alt="Chania" style="height:700px">
                   <div class="carousel-caption">
                     <h3>Chania</h3>
                     <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -137,7 +135,7 @@
                 </div>
               
                 <div class="item">
-                  <img src="https://kategoestech.com/wp-content/uploads/2017/08/frost-and-sullivan.jpg" alt="Flower" style="height:600px">
+                  <img src="https://kategoestech.com/wp-content/uploads/2017/08/frost-and-sullivan.jpg" alt="Flower" style="height:700px">
                   <div class="carousel-caption">
                     <h3>Flowers</h3>
                     <p>Beautiful flowers in Kolymbari, Crete.</p>
@@ -145,7 +143,7 @@
                 </div>
           
                 <div class="item">
-                  <img src="https://www.ahsnnetwork.com/wp-content/uploads/2018/09/innovation-tech-health.jpeg" alt="Flower" style="height:600px">
+                  <img src="https://www.ahsnnetwork.com/wp-content/uploads/2018/09/innovation-tech-health.jpeg" alt="Flower" style="height:700px">
                   <div class="carousel-caption">
                     <h3>Flowers</h3>
                     <p>Beautiful flowers in Kolymbari, Crete.</p>
@@ -177,7 +175,8 @@
         <div class="text-wr">
             <h1 class="title">Categories</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+            <div class="row text-center" style="display:flex;">
+              
                 <!-- <h1>Categories</h1> -->
                 <div class="container1">
                         <img src="https://i.udemycdn.com/course/750x422/1942182_f8c0.jpg" alt="Avatar" class="image" style="width:100%">
@@ -191,15 +190,47 @@
                             <a href="/categories/HMI" class="text">HMI</a>
                         </div>
                 </div>
+                <div class="container1">
+                        <img src="https://www.a-m-c.com/wp-content/uploads/2017/05/servo-drives.jpg" alt="Avatar" class="image" style="width:100%">
+                        <div class="middle">
+                          <a href="/categories/SERVO DRIVES" class="text">SERVO DRIVES</a>
+                        </div>
+                </div>
+                <div class="container1">
+                  <img src="https://i.postimg.cc/GhBZpcXL/ALLOTHER-DRIVE.png" alt="Avatar" class="image" style="width:100%">
+                  <div class="middle">
+                    <a href="/categories/AC DRIVES" class="text">AC DRIVES</a>
+                  </div>
+                </div>
+                <div class="container1">
+                  <img src="http://kuksons.com/images/switchgear.jpg" alt="Avatar" class="image" style="width:100%">
+                  <div class="middle">
+                    <a href="/categories/SWITCHGEARS" class="text">SWITCHGEARS</a>
+                  </div>
+                </div>
+                <div class="container1">
+                  <img src="https://2.imimg.com/data2/VI/FS/MY-3249291/l-t-push-buttons-500x500.jpg" alt="Avatar" class="image" style="width:100%">
+                  <div class="middle">
+                    <a href="/categories/PUSH BUTTON" class="text">PUSH BUTTON</a>
+                  </div>
+                </div>
+                <div class="container1">
+                  <img src="https://ae01.alicdn.com/kf/HTB1ETFgq29TBuNjy0Fcq6zeiFXa0.jpg_q50.jpg" alt="Avatar" class="image" style="width:100%">
+                  <div class="middle">
+                    <a href="/categories/SELECTOR SWITCH" class="text">SELECTOR SWITCH</a>
+                  </div>
+                </div>
+              </div>
                 <!-- <li><a href="/categories/PLC">PLC</a></li> -->
                 <!-- <li><a href="/categories/HMI">HMI</a></li> -->
             </div>
-        </div>
+        
     </div>
     
     <div id="section4" class="section">
         <div >
-            <div >
+            <div>
+                <br>
                 <br>
                 <h1 class="title">Contact Us</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
@@ -210,7 +241,7 @@
                     <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
                 </div>
                 <form method="POST" action="/">
-                    <h3>Drop Us a Message</h3>
+                    <h3>Drop a Message</h3>
                    <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -225,6 +256,7 @@
                             <div class="form-group">
                                 <input type="submit" name="btnSubmit" data-toggle="modal" data-target="#myModal" class="btnContact" value="Send Message" />
                             </div>
+                           
                             <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -256,6 +288,7 @@
     </div>
         </div>
     </div>
+
   <!-- Site footer -->
   <footer class="site-footer">
         <div class="container">

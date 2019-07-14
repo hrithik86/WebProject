@@ -48,6 +48,7 @@ body, html {
   #section4 {
     background: #ebf5ee;
     color: #aeb9b9;
+    min-height: 900px;
   }
   
   h1 {
@@ -79,7 +80,6 @@ body, html {
     padding: 7px 20px;
     border-radius: 7px;
     margin-right: 10px;
-    background: rgba(255, 255, 255, 0.5);
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -ms-transition: all 0.2s ease-out;
@@ -97,7 +97,7 @@ body, html {
     color: white;
   }
   
-  .navbar-default .navbar-nav>li>a:hover { background: rgba(255, 255, 255, 0.7); }
+  .navbar-default .navbar-nav>li>a:hover {color: grey; }
   pre{
       display: none;
   }
@@ -270,7 +270,7 @@ body, html {
 } */
 .contact-form{
     background: #fff;
-    margin-top: 10%;
+    margin-top: 8%;
     /* margin-bottom: 5%; */
     width: 70%;
 }

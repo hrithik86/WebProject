@@ -22,8 +22,6 @@
   }
     .container1 {
     position: relative;
-    width: 50%;
-    margin-top: 20px;
     }
 
     .image {
@@ -56,16 +54,28 @@
     
     }
 
-    .text {
+    a.text {
     /* background-color: #4CAF50; */
-    color: white;
+    color: azure;
     font-size:18px;
     /* padding: 16px 32px; */
     font-weight: bolder;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
     }
     a:hover{
         text-decoration: none;
-        color:white;
+        color: azure;
+        text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
 
     }
 
@@ -175,56 +185,84 @@
         <div class="text-wr">
             <h1 class="title">Categories</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            <div class="row text-center" style="display:flex;">
-              
-                <!-- <h1>Categories</h1> -->
-                <div class="container1">
-                        <img src="https://i.udemycdn.com/course/750x422/1942182_f8c0.jpg" alt="Avatar" class="image" style="width:100%">
-                        <div class="middle">
-                          <a href="/categories/PLC" class="text">PLC</a>
-                        </div>
-                </div>
-                <div class="container1">
-                        <img src="https://5.imimg.com/data5/RM/VM/MY-12405404/mitsubishi-hmi-supplier-500x500.jpg" alt="Avatar" class="image" style="width:100%">
-                        <div class="middle">
+            <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="thumbnail container1">
+                      <img src="https://i.udemycdn.com/course/750x422/1942182_f8c0.jpg">
+                        
+                          <div class="middle">
+                            <a href="/categories/PLC" class="text">PLC</a>
+                          </div>
+                        
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="thumbnail container1">
+                      <img src="https://5.imimg.com/data5/RM/VM/MY-12405404/mitsubishi-hmi-supplier-500x500.jpg">
+                        
+                          <div class="middle">
                             <a href="/categories/HMI" class="text">HMI</a>
-                        </div>
-                </div>
-                <div class="container1">
-                        <img src="https://www.a-m-c.com/wp-content/uploads/2017/05/servo-drives.jpg" alt="Avatar" class="image" style="width:100%">
-                        <div class="middle">
-                          <a href="/categories/SERVO DRIVES" class="text">SERVO DRIVES</a>
-                        </div>
-                </div>
-                <div class="container1">
-                  <img src="https://i.postimg.cc/GhBZpcXL/ALLOTHER-DRIVE.png" alt="Avatar" class="image" style="width:100%">
-                  <div class="middle">
-                    <a href="/categories/AC DRIVES" class="text">AC DRIVES</a>
+                          </div>
+                        
+                    </div>
                   </div>
-                </div>
-                <div class="container1">
-                  <img src="http://kuksons.com/images/switchgear.jpg" alt="Avatar" class="image" style="width:100%">
-                  <div class="middle">
-                    <a href="/categories/SWITCHGEARS" class="text">SWITCHGEARS</a>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="thumbnail container1">
+                      <img src="https://www.a-m-c.com/wp-content/uploads/2017/05/servo-drives.jpg">
+                        
+                          <div class="middle">
+                            <a href="/categories/SERVO DRIVES" class="text">SERVO DRIVES</a>
+                          </div>
+                        
+                    </div>
                   </div>
-                </div>
-                <div class="container1">
-                  <img src="https://2.imimg.com/data2/VI/FS/MY-3249291/l-t-push-buttons-500x500.jpg" alt="Avatar" class="image" style="width:100%">
-                  <div class="middle">
-                    <a href="/categories/PUSH BUTTON" class="text">PUSH BUTTON</a>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="thumbnail container1">
+                      <img src="https://i.postimg.cc/GhBZpcXL/ALLOTHER-DRIVE.png">
+                        
+                          <div class="middle">
+                            <a href="/categories/AC DRIVES" class="text">AC DRIVES</a>
+                          </div>
+                        
+                    </div>
                   </div>
-                </div>
-                <div class="container1">
-                  <img src="https://ae01.alicdn.com/kf/HTB1ETFgq29TBuNjy0Fcq6zeiFXa0.jpg_q50.jpg" alt="Avatar" class="image" style="width:100%">
-                  <div class="middle">
-                    <a href="/categories/SELECTOR SWITCH" class="text">SELECTOR SWITCH</a>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="thumbnail container1">
+                      <img src="http://kuksons.com/images/switchgear.jpg">
+                        
+                          <div class="middle">
+                            <a href="/categories/SWITCHGEARS" class="text">SWITCHGEARS</a>
+                          </div>
+                        
+                    </div>
                   </div>
-                </div>
-              </div>
-                <!-- <li><a href="/categories/PLC">PLC</a></li> -->
-                <!-- <li><a href="/categories/HMI">HMI</a></li> -->
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="thumbnail container1">
+                      <img src="https://2.imimg.com/data2/VI/FS/MY-3249291/l-t-push-buttons-500x500.jpg">
+                        
+                          <div class="middle">
+                            <a href="/categories/PUSH BUTTON" class="text">PUSH BUTTON</a>
+                          </div>
+                        
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-6">
+                    <div class="thumbnail container1">
+                      <img src="https://ae01.alicdn.com/kf/HTB1ETFgq29TBuNjy0Fcq6zeiFXa0.jpg_q50.jpg">
+                        
+                          <div class="middle">
+                            <a href="/categories/SELECTOR SWITCH" class="text">SELECTOR SWITCH</a>
+                          </div>
+                        
+                    </div>
+                  </div>
             </div>
-        
+
+
+
+                
+                
+        </div>
     </div>
     
     <div id="section4" class="section">

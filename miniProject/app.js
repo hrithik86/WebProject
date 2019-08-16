@@ -706,24 +706,27 @@ app.get("/categories/:categorytype/:company/:prodId",(req,res)=>{
 app.post("/",(req,res)=>{
     var name=req.body.txtName;
     var email=req.body.txtEmail;
-    var phone=req.body.txtPhone;
+    var sub=req.body.txtSubject;
     var msg=req.body.txtMsg;
     console.log(email);
     console.log(msg);
     console.log(name);
-
+    console.log(sub);
     var data = {
         from: name+ "<"+email+">",
         to: "evolteam86@gmail.com",
-        subject: "Hello i am "+ name,
+        subject: sub,
         text: msg
       };
        
       mailgun.messages().send(data, function (error, body) {
         if(error){
             console.log(error);
+            res.redirect("/");
+            // alert("message not send due to technical issue!!!");
         }else{
-            // res.redirect("/");
+            res.redirect("/");
+            // alert("message send!");
             console.log(body);
         }
         

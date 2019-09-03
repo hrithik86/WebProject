@@ -1,29 +1,116 @@
-<%include ./partials/header.ejs%>
-<%var companies=[];%>
-<style>
-.thumbnail img{
-    width:100%;
-}
-.thumbnail{
-    padding: 0;
-}
-.thumbnail .caption-full{
-    padding: 9px;
-}
-</style>
-<div class="container">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Product page</title>
+        <meta name="description" content="">
+	      <meta name="author" content="">
+
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- CSS
+          ================================================== -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+          <link rel="stylesheet" href="/css/default.css">
+        <link rel="stylesheet" href="/css/layout.css">
+        <link rel="stylesheet" href="/css/media-queries.css">
+        <link rel="stylesheet" href="/css/magnific-popup.css">
+
+        <!-- Script
+        ================================================== -->
+        <script src="/js/modernizr.js"></script>
+        
+
+        <!-- Favicons
+        ================================================== -->
+        
+
+
+        <style>
+          ul#nav{
+            background: black;
+          }
+          header{
+            min-height: 48px !important;
+            height: 48px !important;
+            background-image: none;
+            height: unset;
+          }
+          .body{
+            background-color: azure;
+            line-height: 1.6 !important;
+
+          }
+        .container{
+             margin-top:5%;
+             margin-bottom: 5%;
+    		  }
+            
+          .thumbnail img{
+              width:100%;
+          }
+          .thumbnail{
+              padding: 0;
+          }
+          .thumbnail .caption-full{
+              padding: 9px;
+          }
+          hr.style-two {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+          }    
+        </style>
+    </head>
     
-  <header class="jumbotron">
+
+   
+
+<body>
+  <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="/">Home</a></li>
+            <li><a class="smoothscroll" href="/">About</a></li>
+            <li><a class="smoothscroll" href="/">Works</a></li>
+            <li><a class="smoothscroll" href="/">Testimonials</a></li>
+            <li><a class="smoothscroll" href="/">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+   </header> <!-- Header End -->
+
+<%var companies=[];%>
+<div class="container" style="text-align: center;">
+    
+  <!-- <header class="jumbotron">
       <div style="text-align:center" class="container">
           <h1><%=categoryType%> Section!!!</h1>
       </div>
-  </header>
+  </header> -->
+  <h1 style="font-size: 5rem; text-shadow: 2px 2px rgb(219, 114, 73);"><%=categoryType%> Section</h1>
   <%for(var i=0;i<products.length;i++){ %>
     <%if(!companies.includes(products[i].company)){%>
         <%companies.push(products[i].company)%>
         <%console.log(companies);%>
-        <button type="button" class="btn btn-info btn-lg"><%=products[i].company%></button>
-
+        <br>
+        <hr class="style-two">
+        <h1><%=products[i].company%></h1>
+        <br>
+        <br>
   <div class="row text-center" style="display:flex; flex-wrap: wrap;">
     <%for(var j=0;j<products.length;j++){%>
       <%if(products[j].company==products[i].company){%>
@@ -45,4 +132,46 @@
   <%}%>
   <%}%>
 </div>
-<%include ./partials/footer.ejs%>
+<!-- footer
+   ================================================== -->
+   <footer style="background: black; margin-bottom: 0 !important;">
+
+      <div class="row">
+  
+         <div class="twelve columns">
+  
+            <ul class="social-links">
+               <li><a href="/"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="/"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="/"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="/"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="/"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="/"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="/"><i class="fa fa-skype"></i></a></li>
+            </ul>
+  
+            <ul class="copyright">
+               <li>&copy; Copyright 2019</li>
+               <li>Design by <a title="HM" href="/">HM</a></li>   
+            </ul>
+  
+         </div>
+  
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+  
+      </div>
+  
+   </footer> <!-- Footer End-->
+   <!-- Java Script
+     ================================================== -->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+     <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+  
+     <script src="/js/jquery.flexslider.js"></script>
+     <script src="/js/waypoints.js"></script>
+     <script src="/js/jquery.fittext.js"></script>
+     <script src="/js/magnific-popup.js"></script>
+     <script src="/js/main.js"></script>
+   </body>
+   </html>

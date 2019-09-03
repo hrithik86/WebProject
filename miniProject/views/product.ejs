@@ -1,65 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
     <head>
+        <meta charset="utf-8">
         <title>Product page</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="/css/footer.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <meta name="description" content="">
+	      <meta name="author" content="">
+
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- CSS
+          ================================================== -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <script src="/js/main.js"></script>
-        <style>
-        .navbar-default {
-            position: fixed;
-            width: 100%;
-            top: 0px;
-            z-index: 9;
-            /* padding-left: 10px; */
-            border: none;
-        }
-        
-        .navbar-default .navbar-nav>li>a {
-            padding: 7px 20px;
-            border-radius: 7px;
-            margin-right: 10px;
-            background: rgba(255, 255, 255, 0.5);
-            -webkit-transition: all 0.2s ease-out;
-            -moz-transition: all 0.2s ease-out;
-            -ms-transition: all 0.2s ease-out;
-            -o-transition: all 0.2s ease-out;
-            transition: all 0.2s ease-out;
-            text-decoration: none;
-            color: black;
-            font-family: sans-serif, arial;
-            font-weight: 100;
-            margin-top:10px;
-        }
-        
-        .navbar-default .navbar-nav>li>a.active {
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-        }
-        
-        .navbar-default .navbar-nav>li>a:hover { background: rgba(255, 255, 255, 0.7); }
-        .container{
-			margin-top:100px;
-		}
-		.newarrival{
-			background: green;
-			width:50px;
-			color: white;
-			font-size: 12px;
-			font-weight: bold;
-		}
-		.col-md-7 h2{
-			color: #555;
+          <link rel="stylesheet" href="/css/default.css">
+        <link rel="stylesheet" href="/css/layout.css">
+        <link rel="stylesheet" href="/css/media-queries.css">
+        <link rel="stylesheet" href="/css/magnific-popup.css">
 
-		}
-		.col-md-5 img{
-			margin-right:50px;
-			width:300px;
-        }
+        <!-- Script
+        ================================================== -->
+        <script src="/js/modernizr.js"></script>
         
+
+        <!-- Favicons
+        ================================================== -->
+        
+
+
+        <style>
+          ul#nav{
+            background: black;
+          }
+          header{
+            min-height: 48px !important;
+            height: 48px !important;
+            background-image: none;
+            height: unset;
+          }
+          .body{
+            background-color: azure;
+            line-height: 1.6 !important;
+
+          }
+        .container{
+             margin-top:5%;
+             margin-bottom: 5%;
+    		  }
+          .newarrival{
+            background: green;
+            width:50px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+          }
+          .col-md-7 h2{
+            color: #555;
+          }
+          .col-md-5 img{
+            margin-right:50px;
+            width:300px;
+          }    
         </style>
     </head>
     
@@ -67,35 +71,28 @@
    
 
 <body>
-        <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                 
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/">Brand</a>
-                  </div>
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                      
-                      
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                            <li><a href="/">Link to section 1</a></li>
-                            <li><a href="/">Link to section 2</a></li>
-                            <li><a href="/">Our products</a></li>
-                            <li><a href="/">Contact Us</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+  <!-- Header
+   ================================================== -->
+   <header id="home">
 
-	
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="/">Home</a></li>
+            <li><a class="smoothscroll" href="/">About</a></li>
+            <li><a class="smoothscroll" href="/">Works</a></li>
+            <li><a class="smoothscroll" href="/">Testimonials</a></li>
+            <li><a class="smoothscroll" href="/">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+   </header> <!-- Header End -->
+
+
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
@@ -113,9 +110,48 @@
 
 		</div>
 	</div>
-<br>
-<br>
-<br>
-<br>
 
-<%include ./partials/footer.ejs%>
+
+<!-- footer
+   ================================================== -->
+   <footer style="background: black; margin-bottom: 0 !important;">
+
+    <div class="row">
+
+       <div class="twelve columns">
+
+          <ul class="social-links">
+             <li><a href="/"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="/"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="/"><i class="fa fa-google-plus"></i></a></li>
+             <li><a href="/"><i class="fa fa-linkedin"></i></a></li>
+             <li><a href="/"><i class="fa fa-instagram"></i></a></li>
+             <li><a href="/"><i class="fa fa-dribbble"></i></a></li>
+             <li><a href="/"><i class="fa fa-skype"></i></a></li>
+          </ul>
+
+          <ul class="copyright">
+             <li>&copy; Copyright 2019</li>
+             <li>Design by <a title="HM" href="/">HM</a></li>   
+          </ul>
+
+       </div>
+
+       <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+    </div>
+
+ </footer> <!-- Footer End-->
+ <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="/js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="/js/jquery.flexslider.js"></script>
+   <script src="/js/waypoints.js"></script>
+   <script src="/js/jquery.fittext.js"></script>
+   <script src="/js/magnific-popup.js"></script>
+   <script src="/js/main.js"></script>
+ </body>
+ </html>
